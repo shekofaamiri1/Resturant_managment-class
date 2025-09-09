@@ -10,3 +10,4 @@ private:
     int ID;
     string name;
     int price;
+public:
