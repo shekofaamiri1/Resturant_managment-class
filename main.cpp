@@ -24,3 +24,10 @@ Food()
         setPrice(p);
     }
     ~Food() {}
+    void setID(int i)
+    {
+        if (i > 0)
+            ID = i;
+        else
+            ID = 0;
+    }
