@@ -31,3 +31,10 @@ Food()
         else
             ID = 0;
     }
+    void setName(const string &n)
+    {
+        if (!n.empty())
+            name = n;
+        else
+            name = "Unknown";
+    }
