@@ -11,9 +11,15 @@ private:
     string name;
     int price;
 public:
-ood()
+Food()
     {
         setID(0);
         setName("");
         setPrice(0);
+    }
+    Food(int i, const string &n, int p)
+    {
+        setID(i);
+        setName(n);
+        setPrice(p);
     }
