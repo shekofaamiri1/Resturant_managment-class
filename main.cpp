@@ -38,3 +38,10 @@ Food()
         else
             name = "Unknown";
     }
+    void setPrice(int p)
+    {
+        if (p >= 0)
+            price = p;
+        else
+            price = 0;
+    }
