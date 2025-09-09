@@ -11,3 +11,9 @@ private:
     string name;
     int price;
 public:
+ood()
+    {
+        setID(0);
+        setName("");
+        setPrice(0);
+    }
