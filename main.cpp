@@ -45,3 +45,6 @@ Food()
         else
             price = 0;
     }
+    int getID() const { return ID; }
+    string getName() const { return name; }
+    int getPrice() const { return price; }
