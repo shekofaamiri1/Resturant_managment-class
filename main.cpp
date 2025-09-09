@@ -48,3 +48,8 @@ Food()
     int getID() const { return ID; }
     string getName() const { return name; }
     int getPrice() const { return price; }
+void print() const
+    {
+        cout << ID << "\t" << name << "\t" << price << " Toman" << endl;
+    }
+};
