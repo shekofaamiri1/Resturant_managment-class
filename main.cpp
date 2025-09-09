@@ -23,3 +23,4 @@ Food()
         setName(n);
         setPrice(p);
     }
+    ~Food() {}
