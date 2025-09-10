@@ -83,3 +83,8 @@ int findFoodByID(int id)
     }
     return -1;
 }
+void saveMenuToFile(const string &filename)
+{
+    ofstream file(filename);
+    if (!file)
+        return;
