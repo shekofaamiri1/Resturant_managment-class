@@ -60,3 +60,11 @@ void readMenuFromFile(const string &filename)
     if (!file)
         return;
     menu.clear();
+    int id, price;
+    string name;
+    while (file >> id >> name >> price)
+    {
+        menu.push_back(Food(id, name, price));
+    }
+    file.close();
+}
