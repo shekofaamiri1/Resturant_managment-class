@@ -54,3 +54,9 @@ void print() const
     }
 };
 vector<Food> menu;
+void readMenuFromFile(const string &filename)
+{
+    ifstream file(filename);
+    if (!file)
+        return;
+    menu.clear();
