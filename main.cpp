@@ -53,3 +53,4 @@ void print() const
         cout << ID << "\t" << name << "\t" << price << " Toman" << endl;
     }
 };
+vector<Food> menu;
