@@ -88,3 +88,9 @@ void saveMenuToFile(const string &filename)
     ofstream file(filename);
     if (!file)
         return;
+        for (const auto &f : menu)
+    {
+        file << f.getID() << " " << f.getName() << " " << f.getPrice() << endl;
+    }
+    file.close();
+}
