@@ -68,3 +68,9 @@ void readMenuFromFile(const string &filename)
     }
     file.close();
 }
+void showMenu()
+{
+    cout << "ID\tName\tPrice" << endl;
+    for (const auto &f : menu)
+        f.print();
+}
