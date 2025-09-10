@@ -74,3 +74,12 @@ void showMenu()
     for (const auto &f : menu)
         f.print();
 }
+int findFoodByID(int id)
+{
+    for (size_t i = 0; i < menu.size(); ++i)
+    {
+        if (menu[i].getID() == id)
+            return i;
+    }
+    return -1;
+}
