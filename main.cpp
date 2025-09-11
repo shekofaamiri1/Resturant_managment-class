@@ -94,3 +94,11 @@ void saveMenuToFile(const string &filename)
     }
     file.close();
 }
+// Class for single order item
+class OrderItem
+{
+private:
+    int foodID;
+    string foodName;
+    int quantity;
+    int Price;
