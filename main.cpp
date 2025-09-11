@@ -132,3 +132,10 @@ private:
         else
             foodName = "Unknown";
     }
+    void setQuantity(int qty)
+    {
+        if (qty > 0)
+            quantity = qty;
+        else
+            quantity = 0;
+    }
