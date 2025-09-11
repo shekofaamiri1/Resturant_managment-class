@@ -139,3 +139,11 @@ private:
         else
             quantity = 0;
     }
+     void setPrice(int pri)
+    {
+        if (pri >= 0)
+            Price = pri;
+        else
+            Price = 0;
+    }
+
