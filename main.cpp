@@ -159,3 +159,8 @@ public:
             quantity += qty;
     }
     int getTotalPrice() const { return quantity * Price; }
+    void print() const
+    {
+        cout << foodName << "\t" << Price << "\t" << quantity << "\t" << getTotalPrice() << "\n";
+    }
+};
