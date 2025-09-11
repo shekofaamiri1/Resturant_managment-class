@@ -102,3 +102,4 @@ private:
     string foodName;
     int quantity;
     int Price;
+    public:
