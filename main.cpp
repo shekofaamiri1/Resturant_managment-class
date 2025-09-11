@@ -103,3 +103,10 @@ private:
     int quantity;
     int Price;
     public:
+    OrderItem()
+    {
+        setFoodID(0);
+        setFoodName("");
+        setQuantity(0);
+        setPrice(0);
+    }
