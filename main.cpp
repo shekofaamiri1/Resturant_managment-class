@@ -10,8 +10,9 @@ private:
     int ID;
     string name;
     int price;
+
 public:
-Food()
+    Food()
     {
         setID(0);
         setName("");
@@ -48,7 +49,7 @@ Food()
     int getID() const { return ID; }
     string getName() const { return name; }
     int getPrice() const { return price; }
-void print() const
+    void print() const
     {
         cout << ID << "\t" << name << "\t" << price << " Toman" << endl;
     }
@@ -88,7 +89,7 @@ void saveMenuToFile(const string &filename)
     ofstream file(filename);
     if (!file)
         return;
-        for (const auto &f : menu)
+    for (const auto &f : menu)
     {
         file << f.getID() << " " << f.getName() << " " << f.getPrice() << endl;
     }
@@ -102,7 +103,8 @@ private:
     string foodName;
     int quantity;
     int Price;
-    public:
+
+public:
     OrderItem()
     {
         setFoodID(0);
@@ -125,7 +127,7 @@ private:
         else
             foodID = 0;
     }
-     void setFoodName(const string &name)
+    void setFoodName(const string &name)
     {
         if (!name.empty())
             foodName = name;
@@ -139,11 +141,14 @@ private:
         else
             quantity = 0;
     }
-     void setPrice(int pri)
+    void setPrice(int pri)
     {
         if (pri >= 0)
             Price = pri;
         else
             Price = 0;
     }
-
+    int getFoodID() const { return foodID; }
+    string getFoodName() const { return foodName; }
+    int getQuantity() const { return quantity; }
+    int getPrice() const { return Price; }
