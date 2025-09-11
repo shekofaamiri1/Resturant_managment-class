@@ -152,3 +152,10 @@ public:
     string getFoodName() const { return foodName; }
     int getQuantity() const { return quantity; }
     int getPrice() const { return Price; }
+    
+    void addQuantity(int qty)
+    {
+        if (qty > 0)
+            quantity += qty;
+    }
+    int getTotalPrice() const { return quantity * Price; }
