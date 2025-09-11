@@ -125,3 +125,10 @@ private:
         else
             foodID = 0;
     }
+     void setFoodName(const string &name)
+    {
+        if (!name.empty())
+            foodName = name;
+        else
+            foodName = "Unknown";
+    }
