@@ -117,3 +117,4 @@ private:
         setQuantity(qty);
         setPrice(pri);
     }
+    ~OrderItem() {}
