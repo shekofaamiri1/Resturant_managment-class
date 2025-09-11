@@ -110,3 +110,10 @@ private:
         setQuantity(0);
         setPrice(0);
     }
+    OrderItem(int id, int qty, int pri, const string &name)
+    {
+        setFoodID(id);
+        setFoodName(name);
+        setQuantity(qty);
+        setPrice(pri);
+    }
