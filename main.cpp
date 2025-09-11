@@ -118,3 +118,10 @@ private:
         setPrice(pri);
     }
     ~OrderItem() {}
+    void setFoodID(int id)
+    {
+        if (id > 0)
+            foodID = id;
+        else
+            foodID = 0;
+    }
