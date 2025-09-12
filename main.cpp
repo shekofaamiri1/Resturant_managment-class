@@ -171,4 +171,6 @@ private:
     vector<OrderItem> items;
 
 public:
-    
+    CustomerOrder() {}
+    ~CustomerOrder() {}
+
