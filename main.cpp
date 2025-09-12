@@ -193,4 +193,13 @@ public:
             total += item.getTotalPrice();
         return total;
     }
+    void printOrder() const
+    {
+        cout << "Name\tPrice\tQty\tTotal\n";
+        for (const auto &item : items)
+            item.print();
+        cout << "-------------------------------\n";
+        cout << "Total: " << calculateTotal() << "\n";
+    }
+
     
