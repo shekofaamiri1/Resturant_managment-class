@@ -164,3 +164,9 @@ public:
         cout << foodName << "\t" << Price << "\t" << quantity << "\t" << getTotalPrice() << "\n";
     }
 };
+// Class for customer order
+class CustomerOrder
+{
+private:
+    vector<OrderItem> items;
+
