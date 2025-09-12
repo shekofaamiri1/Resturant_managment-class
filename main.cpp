@@ -174,3 +174,17 @@ public:
     CustomerOrder() {}
     ~CustomerOrder() {}
 
+ void addItem(int id, const string &name, int qty, int price)
+    {
+        for (auto &item : items)
+        {
+            if (item.getFoodID() == id)
+            {
+                item.addQuantity(qty);
+                return;
+            }
+        }
+        items.push_back(OrderItem(id, qty, price, name));
+    }
+
+    
