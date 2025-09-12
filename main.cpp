@@ -186,5 +186,11 @@ public:
         }
         items.push_back(OrderItem(id, qty, price, name));
     }
-
+ int calculateTotal() const
+    {
+        int total = 0;
+        for (const auto &item : items)
+            total += item.getTotalPrice();
+        return total;
+    }
     
