@@ -152,7 +152,7 @@ public:
     string getFoodName() const { return foodName; }
     int getQuantity() const { return quantity; }
     int getPrice() const { return Price; }
-    
+
     void addQuantity(int qty)
     {
         if (qty > 0)
@@ -170,3 +170,5 @@ class CustomerOrder
 private:
     vector<OrderItem> items;
 
+public:
+    
