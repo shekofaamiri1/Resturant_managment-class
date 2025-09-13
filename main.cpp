@@ -204,4 +204,12 @@ public:
 void saveToFile(const string &filename) const
     {
         ofstream fout(filename);
+        if (!fout)
+            return;
+        for (const auto &item : items)
+        {
+            fout << item.getFoodID() << " " << item.getFoodName() << " " << item.getPrice() << " " << item.getQuantity() << endl;
+        }
+        fout.close();
+    }
     
