@@ -201,5 +201,7 @@ public:
         cout << "-------------------------------\n";
         cout << "Total: " << calculateTotal() << "\n";
     }
-
+void saveToFile(const string &filename) const
+    {
+        ofstream fout(filename);
     
