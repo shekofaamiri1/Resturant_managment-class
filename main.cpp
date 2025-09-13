@@ -212,4 +212,10 @@ void saveToFile(const string &filename) const
         }
         fout.close();
     }
+    void loadFromFile(const string &filename)
+    {
+        ifstream fin(filename);
+        if (!fin)
+            return;
+        items.clear();
     
