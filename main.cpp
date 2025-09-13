@@ -220,4 +220,11 @@ void saveToFile(const string &filename) const
         items.clear();
         int id, price, qty;
         string name;
+         while (fin >> id >> name >> price >> qty)
+        {
+            items.push_back(OrderItem(id, qty, price, name));
+        }
+        fin.close();
+    }
+};
     
