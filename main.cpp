@@ -218,4 +218,6 @@ void saveToFile(const string &filename) const
         if (!fin)
             return;
         items.clear();
+        int id, price, qty;
+        string name;
     
